@@ -1,7 +1,6 @@
 import { useState, useEffect, useReducer, useRef } from 'react';
 import './App.css';
 
-
 function taskReducer(tasks, action) {
   switch (action.type) {
     case 'ADD_TASK':
@@ -34,7 +33,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>To-Do List</h1>
+      <h1>ToDo List</h1>
       <div className="input-container">
         <input
           ref={inputRef}
